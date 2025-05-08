@@ -1,46 +1,43 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Painel do Bot Discord</title>
-  <style>
-    body { font-family: Arial; padding: 20px; background: #222; color: #eee; }
-    input, button { padding: 10px; margin: 5px; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loghit Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h2>Painel do Bot Discord</h2>
-  <div id="login">
-    <input type="text" id="user" placeholder="Usuário">
-    <input type="password" id="pass" placeholder="Senha">
-    <button onclick="login()">Entrar</button>
-  </div>
-  <div id="painel" style="display:none;">
-    <input type="text" id="comando" placeholder="Digite o comando">
-    <button onclick="enviar()">Enviar</button>
-    <div id="resposta"></div>
-  </div>
-<script>
-function login() {
-  const u = document.getElementById('user').value;
-  const p = document.getElementById('pass').value;
-  if (u === "admin" && p === "1234") {
-    document.getElementById('login').style.display = "none";
-    document.getElementById('painel').style.display = "block";
-  } else {
-    alert("Login inválido");
-  }
-}
-
-function enviar() {
-  const comando = document.getElementById('comando').value;
-  fetch('/api/comando', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ comando })
-  }).then(res => res.json()).then(data => {
-    document.getElementById('resposta').innerText = data.resultado || data.erro;
-  });
-}
-</script>
+  <header>
+    <h1>Loghit</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Comandos</a>
+      <a href="#">Suporte</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="card">
+      <h2>Tickets</h2>
+      <p>Gerencie e responda tickets diretamente pelo painel.</p>
+    </div>
+    <div class="card">
+      <h2>Logs</h2>
+      <p>Visualize ações recentes realizadas no servidor.</p>
+    </div>
+    <div class="card">
+      <h2>Moderação</h2>
+      <p>Acesse ferramentas de banimento, mute e muito mais.</p>
+    </div>
+    <div class="card">
+      <h2>Comandos Customizados</h2>
+      <p>Adicione e edite comandos personalizados para o seu servidor.</p>
+    </div>
+  </main>
+  <footer>
+    Painel do Loghit © 2025 - Feito com amor.
+  </footer>
 </body>
 </html>
