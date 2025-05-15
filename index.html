@@ -1,43 +1,131 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loghit Dashboard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>ActionScript - Serviços Gamer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    .hero h2 {
+      margin-bottom: 10px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .btn {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Loghit</h1>
+    <h1>ActionScript</h1>
     <nav>
-      <a href="#">Início</a>
-      <a href="#">Comandos</a>
-      <a href="#">Suporte</a>
-      <a href="#">Login</a>
+      <a href="#discord">Discord</a>
+      <a href="#membros">Membros</a>
+      <a href="#dados">Contas de Jogo</a>
     </nav>
   </header>
-  <main class="container">
+
+  <section class="hero">
+    <h2>Serviços Gamer Profissionais</h2>
+    <p>Venda de membros para servidores no Discord e exibição de dados de contas autorizadas de jogos.</p>
+  </section>
+
+  <section class="section" id="discord">
     <div class="card">
-      <h2>Tickets</h2>
-      <p>Gerencie e responda tickets diretamente pelo painel.</p>
+      <h3>Nosso Discord</h3>
+      <p>Entre em contato, tire dúvidas e veja ofertas exclusivas diretamente no nosso servidor.</p>
+      <a class="btn" href="https://discord.gg/5SXgh4VeWW" target="_blank">Entrar no Discord</a>
     </div>
+  </section>
+
+  <section class="section" id="membros">
     <div class="card">
-      <h2>Logs</h2>
-      <p>Visualize ações recentes realizadas no servidor.</p>
+      <h3>Venda de Membros Discord</h3>
+      <p>Oferecemos pacotes de crescimento para servidores. Membros reais ou bots conforme o solicitado.</p>
+      <ul>
+        <li>Pacote 50 membros - R$5</li>
+        <li>Pacote 100 membros - R$9</li>
+        <li>Pacote 500 membros - R$30</li>
+      </ul>
+      <a class="btn" href="mailto:vitordasilvamendes55@gmail.com?subject=Compra de membros Discord&body=Olá, quero comprar membros para meu servidor.">Comprar via Pix</a>
     </div>
+  </section>
+
+  <section class="section" id="dados">
     <div class="card">
-      <h2>Moderação</h2>
-      <p>Acesse ferramentas de banimento, mute e muito mais.</p>
+      <h3>Exemplo: Dados Pessoias-CPF MAE Email</h3>
+      <p><strong>Telefone:</strong> Se Tive o Telefone Dele Tem Coml Puxar</p>
+      <p><strong>Email:</strong> Tambem Tem Como Puxa</p>
+      <p><strong></strong> </p>
     </div>
-    <div class="card">
-      <h2>Comandos Customizados</h2>
-      <p>Adicione e edite comandos personalizados para o seu servidor.</p>
-    </div>
-  </main>
+
+
   <footer>
-    Painel do Loghit © 2025 - Feito com amor.
+    &copy; 2025 ActionScript. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
